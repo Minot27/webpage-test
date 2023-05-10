@@ -1,0 +1,1186 @@
+
+
+:root {
+
+  /* --primary-color: #C23334; */
+  --primary-color: red;
+  --white-color: white;
+}
+
+/*********************BARRA DE NAVEGACION************************************/
+.navbar{
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 0px 00;
+}
+
+.container-navbar{
+  margin: 0 20px;
+}
+
+.container-navbar-2{
+  background-color: var(--white-color);
+  height: 50px;
+}
+.container-navbar-2 {
+  width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*Para que el vanbar tenga lado un borde inclinado*/
+/*
+.image-container {
+  padding-left: 30px;
+  padding-right: 3%;
+  transform: skewX(45deg);
+}
+.navbar-brand img {
+  transform: skewX(-45deg);
+  max-width: none;
+}
+*/
+
+
+.navbar a {
+  transition: all 0.3s ease;
+  font-size: 15px;
+  
+}
+
+
+
+
+.navbar-scrolled {
+  background-color: white;
+  
+}
+
+/* .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+} */
+
+.nav-item .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  color: rgb(0, 0, 0);
+  
+}
+
+
+.nav-link {
+  text-decoration: none;
+  
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: var(--primary-color);
+
+  /*linea roja debajo*/
+  border-bottom: 3px solid rgb(255, 0, 0);
+  padding-bottom: 5px;
+  transition: none;
+
+}
+
+
+
+
+
+
+
+/*for services*/
+.navbar .social-icon li a {
+  color: white;
+  margin-bottom: 10px;
+  
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 35px;
+  outline: none;
+  
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: red;
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 30px;
+  height: 2px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: red;
+  width: 30px;
+  height: 2px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.social-icon {
+  position: relative;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.social-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.social-icon li a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.social-icon li a:hover {
+  color: red;
+}
+
+/*dropdown menu*/
+.dropdown-menu {
+  background-color: var(--white-color);
+  margin-top: 0px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #000000;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.dropdown-item.servicio-1 {
+  color: black;
+}
+
+.dropdown-item.servicio-1.active,
+.dropdown-item.servicio-1:active {
+  color: red;
+  background-color: transparent;
+}
+
+
+
+
+.dropdown-item:hover {
+  color: red;
+  background-color: transparent;
+}
+
+
+
+.dropdown-item {
+  color: rgb(0, 0, 0);
+}
+
+/*color activo*/
+.dropdown-item:active {
+  background-color: #0f1115;
+  color: red;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************Section  Hero******************************************************/
+
+.hero {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,1));
+}
+
+
+.hero h1{
+  font-size: 40px;
+  font-family: 'Bowlby One', cursive;
+}
+
+  
+  .hero h6{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .hero a{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .hero i{
+    color: rgb(255, 255, 255);
+  }
+
+  .hero p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+
+
+  /*posicion*/
+  .container-text-hero{
+    position: relative;
+    right: 33%;
+    padding-bottom: 8%;
+}
+
+.container-text-hero h6{
+    color: gray;
+}
+ 
+
+
+
+
+
+
+
+  /*button celular*/
+  
+  .custom-btn {
+    background: transparent;
+    padding: 14px 24px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+
+
+  .custom-btn:focus {
+    box-shadow: none;
+  }
+  .custom-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+
+  .bordered {
+    border: 2.4px solid #ffffff;
+    color: #ffffff;
+    border-radius: 3%;
+    padding: 12px 25px;
+  }
+
+
+  .custom-btn-2:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .custom-btn-2:hover i {
+    color: black;
+  }
+
+  #por-que-elegirnos:focus {
+    border: 2px solid green;
+  }
+  
+
+
+ 
+  .hero a:hover{
+    color: #000000;
+    
+  }
+
+
+  
+
+  /************************Estilos porque elegirnos****************************/
+  
+  .container-cards{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+
+  .section-wc-top h3{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 33px;
+  }
+
+  .section-wc-top p{
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    font-size: 18px;
+  }
+
+  .section-wc-top {
+    background: #000000;
+    padding-top: 25px;
+    position: relative;
+  }
+
+  .wc-section { 
+    min-height: 515px; 
+    background-color: #000000;
+  }
+
+  .wc-position-relative { 
+    position: relative; 
+  }
+
+  .wc-section-down-arrow {
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  height: 100px;
+}
+
+/*cards*/
+.tm-pt-5 { padding-top: 150px; }
+.tm-pb-4 { padding-bottom: 100px; }
+
+
+.tm-article {
+	padding: 40px;
+	transition: all 0.3s ease;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.tm-article h3, a{
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+}
+
+.tm-article a:hover{
+  color: rgb(255, 64, 64);
+}
+
+.tm-article p{
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15.5px;
+  color: rgb(90, 90, 90);
+}
+
+.tm-article i{
+  color: rgb(26, 26, 26);
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+
+.tm-article-title-1 {
+	font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tm-article-title-2 { 
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.tm-article-title-3 { font-size: 1.1rem; }
+
+
+
+
+h3.tm-section-title, h3.tm-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  }
+
+  h3.tm-section-title:after,
+  h3.tm-section-title:before {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  margin: 0 10px;
+  }
+
+
+
+
+/*---------------QUIENES SOMOS--------------------------------------------------------------------------*/
+
+
+.container-about-us p{
+    font-size: 17px;
+}
+
+.custom-btn.bordered-2 i,
+.custom-btn.bordered-2 span {
+  color: black;
+}
+
+
+
+.description-content h3{
+  
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+}
+
+
+.section-our h2{
+  font-family: 'Bowlby One', cursive;
+  
+}
+
+.section-our p{
+  font-size: 15px;
+  font-family: 'Montserrat', cursive;
+}
+
+.section-our button{
+  margin-top: 30px;
+  border: none;
+  padding: 10px 20px;
+  color: rgb(233, 233, 233);
+  border-radius: 30px;
+  background-color: red;
+  font-size: 18px;
+  font-family: 'Montserrat', cursive;
+}
+
+.section-our button:hover{
+  background-color: rgb(255, 43, 43);
+}
+
+
+
+.feature{
+  padding-top: 900px;
+}
+
+
+
+
+
+
+
+h3.title-our{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: rgb(255, 65, 65);
+  font-family: 'Bowlby One', cursive;
+  font-size: 24px;
+}
+
+
+h3.title-our, h3.title-our {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  }
+
+  h3.title-our-1:after,
+  h3.title-our-1:before {
+  content: '';
+  width: 5em;
+  height: 3.5px;
+  background: rgb(255, 0, 0);
+  margin: 0 10px;
+  }
+
+  h3.title-our-2:after,
+  h3.title-our-2:before {
+  content: '';
+  width: 4em;
+  height: 3.5px;
+  background: rgb(255, 0, 0);
+  margin: 0 10px;
+  }
+
+ 
+
+
+
+
+/*********************Nuestros servicios**************************************************************************/
+/*linea*/
+
+h2.title-service, h2.service-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  }
+
+  h2.title-service:after,
+  h2.title-service:before {
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  margin: 0 10px;
+  }
+
+
+  
+  h2.service-name:after,
+  h2.service-name:before {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #e50c17;
+  margin: 0 10px;
+  }
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carousel {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: transparent;
+    bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+.carousel__slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 200px;
+}
+
+.carousel__list {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.carousel__item {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel__item img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 10%;
+}
+
+
+/****************************NUESTRA FLOTA***************************************/
+/*Linea roja*/
+h2.title-service-2, h2.service-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  }
+
+  h2.title-service-2:after,
+  h2.title-service-2:before {
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: rgb(255, 4, 4);
+  margin: 0 10px;
+  }
+
+.card h5{
+  color: red;
+  padding-top: 10px;
+}
+
+.box-shadow-card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.class{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.class h2{
+  
+  font-family: 'Bowlby One', cursive;
+  color: #ff0f17;
+  font-size: 33px;
+}
+
+.class h3{
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+  font-size: 20px;
+}
+  
+.class-info {
+  background: white;
+  box-shadow: 6px 0 38px rgba(20,20,20,0.10);
+  border-radius: 0 0 2px 2px;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.class-info img {
+  border-radius: 2px 2px 0 0;
+}
+
+.class-info strong {
+  color: rgb(71, 71, 71);
+}
+
+/*linea title*/
+h2.title-class {
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+}
+
+h2.title-class:after,
+h2.title-class:before {
+content: '';
+width: 150px;
+height: 2px;
+background: red;
+margin: 0 10px;
+}
+
+.class-thumb{
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/*Clientes*************************************************************************/
+
+h2.title-service-3, h2.service-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  }
+
+  h2.title-service-3:after,
+  h2.title-service-3:before {
+  content: '';
+  width: 150px;
+  height: 3px;
+  background: rgb(255, 4, 4);
+  margin: 0 10px;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 20px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  
+  
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 80px;
+    margin: 0 40px;   
+  }
+/************************************UBICANOS*****************************************************/
+.contact{
+  padding-top: 130px;    
+  padding-bottom: 150px;
+  
+
+}
+
+.contact h2{
+  font-family: 'Bowlby One', cursive;
+color: #ff1018;
+font-size: 20px;
+}
+
+.contact p{
+font-family: 'Montserrat', sans-serif;
+color: rgb(41, 41, 41);
+font-size: 15px;
+}
+
+.webform input,
+button#submit-button {
+height: calc(2.25rem + 20px);
+}
+
+.form-control {
+border-radius: 2px;
+margin: 1.3rem 0;
+}
+
+.form-control:focus {
+box-shadow: none;
+border-color: black;
+}
+
+button#submit-button {
+background: black;
+border-color: transparent;
+color: white;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+button#submit-button:hover {
+background: #f50c18;
+}
+
+.contact h2 + p {
+max-width: 90%;
+}
+
+
+
+.google-map iframe {
+width: 100%;
+}
+
+
+
+
+
+
+
+h2.text-find-us, h2.text-find-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  }
+
+  h2.text-find-us:after,
+  h2.text-find-us:before {
+  content: '';
+  width: 150px;
+  height: 3px;
+  background: rgb(245, 2, 2);
+  margin: 0 10px;
+  }
+
+
+/****************************************FOOTEr********************************************/
+/****************footer*****************************************/
+
+
+
+/* Estilos para el icono de mensaje de whatsapp*************************************/
+
+.messages {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatsapp-logo {
+  padding-bottom: 20px;
+}
+
+.message-icon img {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.message-icon-open-close {
+  display: block;
+}
+
+.message-icon-open {
+  display: none;
+}
+
+.message-icon.open .message-icon-open-close {
+  display: none;
+}
+
+.message-icon.open .message-icon-open {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/******************************Estilos responsivos********************************/
+
+
+ @media screen and (min-width: 992px) {
+  .section-our-1{
+    padding: 120px 0;
+  }
+
+  .tm-article-1{
+    right: 27px;
+  }
+  .tm-article-2{
+    transform: scale(1.1);
+  }
+  .tm-article-3{
+    left: 27px;
+  }
+    .container-fluid {
+      width: 90%; 
+      margin: 0 auto; 
+    }
+
+    .nav-item{
+      padding: 0 8.5px;
+    }
+
+    .hero-text{
+      position: relative;
+      right: 60%;
+    }
+
+   
+
+    .section-our-2{
+      padding: 50px 0;
+    }
+
+    .section-our-3{
+      padding: 40px 0;
+      padding-bottom: 120px;
+    }
+    
+ }
+
+
+
+
+
+ 
+ @media screen and (max-width: 992px) {
+
+  .section-our-3{
+    padding-top: 40px;
+  }
+
+  .container-about-us-2{
+    margin-top: -50px;
+  }
+
+  .nosotros-section{
+    padding-top: 50px;
+  }
+
+  .title-service{
+    padding-top: 50px;
+  }
+ 
+  
+  h3.title-our-1:after,
+    h3.title-our-1:before {
+      width: 2.5em;
+    }
+  
+    h3.title-our-2:after,
+    h3.title-our-2:before {
+    content: '';
+    width: 3em;
+    }
+  
+  
+
+  /*Solo para servicios*/
+  .nav-item-servicios .nav-link.active,
+  .nav-item-servicios .nav-link:hover {
+    color: black;
+  border-bottom: transparent;
+  }
+  
+
+
+  .dropdown-item {
+    text-align: center;
+  }
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .nav-item .nav-link {
+    padding: 6px;
+  }
+
+  .navbar .social-icon {
+    margin-top: 22px;
+  }
+
+  .navbar-collapse,
+  .site-footer {
+    text-align: center;
+  }
+
+  .schedule-table {
+    display: block;
+  }
+
+  .modal-content {
+    padding: 2rem;
+  }
+
+
+
+  /*altura img y btn*/
+  .container-navbar-2 img{
+    margin-top: -12px;
+  }
+
+  div.container-fluid.container-navbar-2{
+    margin-bottom: 2px;
+  } 
+
+  .navbar-collapse{
+    background-color: white;
+    margin-top: -5px;
+    
+  }
+
+
+  
+  
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .tm-article-1{
+    right: 27px;
+  }
+  .tm-article-2{
+    transform: scale(1.1);
+  }
+  .tm-article-3{
+    left: 27px;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .about-working-hours {
+    border-left: 0;
+    padding: 22px 0 0 0;
+  }
+
+  .contact h2 span {
+    display: block;
+  }
+
+  
+}
+
+
+
+/*Tamaño del texto*/
+@media screen and (max-width: 768px) {
+  .tm-article-2{
+    transform: scale(1);
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .feature h3{
+    font-size: 23px;
+  }
+
+  .feature p{
+    font-size: 16px;
+  }
+  }
+
+  
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+  }
+
+
+
+  @media screen and (max-width: 465px) {
+    h3.title-our-2:after,
+      h3.title-our-2:before {
+      content: '';
+      width: 3em;
+      }
+
+
+    
+   }
+
+   @media screen and (min-width: 992px) {
+    .section-our-1{
+      padding: 120px 0;
+    }
+  }
+
+
+  @media screen and (min-width: 1400px) {
+    .footer{
+        
+    }
+  }
